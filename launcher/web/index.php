@@ -1,11 +1,4 @@
-<?php
-/* 
-	Новости в лаунчере
-	Автор - the__all
-*/
-
-echo '
-	<!DOCTYPE HTML>
+<!DOCTYPE HTML>
 	<html>
 	<head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -23,56 +16,9 @@ echo '
 			<a href="#">Latest news</a>
 		</span>
 	</div>
-';
-
-/* Server status */
-$ApiStatus = @fsockopen ("127.0.0.1","80",$errno, $errstr, 1);
-$LoginStatus = @fsockopen ("127.0.0.1","26950",$errno, $errstr, 1);
-$GameStatus = @fsockopen ("127.0.0.1","39191",$errno, $errstr, 1);
-$BattleStatus = @fsockopen ("127.0.0.1","26950",$errno, $errstr, 1);
-
-echo '
-	<div id="server_status">
+<div id="server_status">
 		<span style="color:#FFFFFF;font-family:Arial;font-size:12px;">API Server: </span>';
-		if($ApiStatus)
-		{
-			echo '<span style="color:#00FF7F;font-family:Arial;font-size:12px;">ON</span>';
-		}
-		else
-		{
-			echo '<span style="color:#FF0000;font-family:Arial;font-size:12px;">OFF</span>';
-		}
-		echo '<span style="color:#FFFFFF;font-family:Arial;font-size:12px;">&nbsp;&nbsp; Login Server: </span>';
-		if($LoginStatus)
-		{
-			echo '<span style="color:#00FF7F;font-family:Arial;font-size:12px;">ON</span>';
-		}
-		else
-		{
-			echo '<span style="color:#FF0000;font-family:Arial;font-size:12px;">OFF</span>';
-		}
-		echo '<span style="color:#FFFFFF;font-family:Arial;font-size:12px;">&nbsp;&nbsp; GameServer: </span>';
-		if($GameStatus)
-		{
-			echo '<span style="color:#00FF7F;font-family:Arial;font-size:12px;">ON</span>';
-		}
-		else
-		{
-			echo '<span style="color:#FF0000;font-family:Arial;font-size:12px;">OFF</span>';
-		}
-		echo '<span style="color:#FFFFFF;font-family:Arial;font-size:12px;">&nbsp;&nbsp; BattleServer: </span>';
-		if($BattleStatus)
-		{
-			echo '<span style="color:#00FF7F;font-family:Arial;font-size:12px;">ON</span>';
-		}
-		else
-		{
-			echo '<span style="color:#FF0000;font-family:Arial;font-size:12px;">OFF</span>';
-		}
-	echo '</div>';
-
-
-?>
+	</div>	
 
 
 <div id="new1_name">
