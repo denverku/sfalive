@@ -1,8 +1,4 @@
 <?php
-/* 
-	Новости в лаунчере
-	Автор - the__all
-*/
 
 echo '
 	<!DOCTYPE HTML>
