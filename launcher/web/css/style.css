@@ -10,7 +10,7 @@ body
 a
 {
    color: #FFFFFF;
-   text-decoration: none; /* Отменяем подчеркивание у ссылки */
+   text-decoration: none; /* ГЋГІГ¬ГҐГ­ГїГҐГ¬ ГЇГ®Г¤Г·ГҐГ°ГЄГЁГўГ Г­ГЁГҐ Гі Г±Г±Г»Г«ГЄГЁ */
 }
 a:visited
 {
@@ -25,23 +25,29 @@ a:hover
    color: #FFFFFF;
    text-decoration: underline;
 }
-#bg
-{
-   border: 0px #000000 solid;
-   position:absolute;left:0px;top:0px;width:728px;height:430px;z-index:0;
-   background: url(../images/bg.png) 100% 100% repeat; /* Добавляем фон */
+#bg {
+    border: 0px #000000 solid;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 728px;
+    height: 430px;
+    z-index: 0;
+    background: url(../images/bg.png) 100% 100% repeat;
+    background-size: cover; /* Scale the image to cover the element */
 }
+
 #bg_news
 {
    border: 0px #000000 solid;
    position:absolute;left:268px;top:260px;width:441px;height:100px;z-index:1;
-   background: url(../images/bg_news.png) 100% 100% repeat; /* Добавляем фон */
+   background: url(../images/bg_news.png) 100% 100% repeat; /* Г„Г®ГЎГ ГўГ«ГїГҐГ¬ ГґГ®Г­ */
 }
 #bg_server_status
 {
    border: 0px #000000 solid;
    position:absolute;left:269px;top:367px;width:441px;height:21px;z-index:2;
-   background: url(../images/bg_server_status.png) 100% 100% repeat; /* Добавляем фон */
+   background: url(../images/bg_server_status.png) 100% 100% repeat; /* Г„Г®ГЎГ ГўГ«ГїГҐГ¬ ГґГ®Г­ */
 }
 #last_news 
 {
@@ -95,7 +101,7 @@ a:hover
 {
    border: 0px #000000 solid;
    position:absolute;left:0px;top:398px;width:728px;height:26px;z-index:7;
-   background: url(../images/bg_stroka.png) 100% 100% repeat; /* Добавляем фон */
+   background: url(../images/bg_stroka.png) 100% 100% repeat; /* Г„Г®ГЎГ ГўГ«ГїГҐГ¬ ГґГ®Г­ */
 }
 #new2_name 
 {
@@ -205,7 +211,7 @@ a:hover
 	background-position:left 106px;
 	opacity: 1;
 }
-/* Бегущая строка */
+/* ГЃГҐГЈГіГ№Г Гї Г±ГІГ°Г®ГЄГ  */
 @-webkit-keyframes scroll {
     0% {
         -webkit-transform: translate(0, 0);
