@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SF Draft</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css">
+    <style>
+        body {
+            padding-top: 56px;
+        }
+        .hero {
+            background: url('https://via.placeholder.com/1500x500') no-repeat center center;
+            background-size: cover;
+            color: white;
+            text-align: center;
+            padding: 100px 0;
+        }
+        .section-padding {
+            padding: 60px 0;
+        }
+        .footer {
+            background-color: #f8f9fa;
+            padding: 30px 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <a class="navbar-brand" href="#">SF Draft</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#gameplay">Gameplay</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#suggestions">Suggestions</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="container">
+            <h1 class="display-4">Welcome to SF Draft</h1>
+            <p class="lead">Get ready for a fresh competitive experience with our new 5v5 tactical FPS game.</p>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h2>What is SF Draft?</h2>
+                    <p>SF Draft is a 5v5 character-based tactical FPS that emphasizes precise gunplay and strategic teamwork. Engage in matches where two teams of five players compete against each other in high-stakes scenarios.</p>
+                </div>
+                <div class="col-lg-6">
+                    <h2>Game Objective</h2>
+                    <p>The objective is to win matches by securing a total of at least 10 rounds. The main game mode features the Red Team attempting to plant a Bomb at one of two designated bomb sites (A or B), while the Blue Team works to prevent this or defuse the Bomb if it's planted.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gameplay Section -->
+    <section id="gameplay" class="section-padding bg-light">
+        <div class="container">
+            <h2>Gameplay Highlights</h2>
+            <p>Experience intense tactical gameplay with a focus on strategic planning and precision. Inspired by popular games, SF Draft brings a new level of excitement to the competitive FPS genre.</p>
+        </div>
+    </section>
+
+    <!-- Suggestions Section -->
+    <section id="suggestions" class="section-padding">
+        <div class="container">
+            <h2>We Value Your Feedback</h2>
+            <p>We are open to your suggestions and ideas. Help us make SF Draft even better by sharing your thoughts with us!</p>
+            <form>
+                <div class="mb-3">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="name" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="suggestion" class="form-label">Your Suggestion</label>
+                    <textarea class="form-control" id="suggestion" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container text-center">
+            <p>&copy; 2024 SF Draft. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.6/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.min.js"></script>
+</body>
+</html>
