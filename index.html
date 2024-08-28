@@ -1,156 +1,217 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <!-- Meta Tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SF Draft</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        body {
-            padding-top: 56px;
-            font-family: Arial, sans-serif;
-        }
-        .hero {
-            background: url('https://via.placeholder.com/1500x500') no-repeat center center;
-            background-size: cover;
-            color: white;
-            text-align: center;
-            padding: 100px 0;
-            background-blur: 5px;
-            position: relative;
-        }
-        .hero::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.4);
-            z-index: 1;
-        }
-        .hero-content {
-            position: relative;
-            z-index: 2;
-        }
-        .section-padding {
-            padding: 60px 0;
-        }
-        .bg-light-custom {
-            background-color: #f1f1f1;
-        }
-        .footer {
-            background-color: #343a40;
-            color: white;
-            padding: 30px 0;
-        }
-        .footer a {
-            color: #f8f9fa;
-        }
-        .footer a:hover {
-            color: #e9ecef;
-            text-decoration: none;
-        }
-        .form-control, .btn {
-            border-radius: 0.5rem;
-        }
-        .btn-primary {
-            background-color: #007bff;
-            border: none;
-        }
-        .btn-primary:hover {
-            background-color: #0056b3;
-        }
-    </style>
+    <meta name="monetag" content="7378a04ef3a23020168cb250581378d6">
+    <!-- Title -->
+    <title>Stick Run</title>
+    <!-- Desc -->
+    <meta name="description" content="StickRun a play2earn game! Download now!">
+    <!-- Icon -->
+    <link rel="icon" type="image/png" sizes="64x64" href="../app/images/favicon.png?v=1">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../app/css/bootstrap.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <!-- Main CSS -->
+    <link rel="stylesheet" type="text/css" href="../app/css/main.css?v=2">
+    <link rel="stylesheet" href="../app/css/discordInvite.css">
+    <!-- OWL carousel css -->
+    <link rel="stylesheet" type="text/css" href="../app/css/owl.carousel.min.css">
+    <link rel="stylesheet" type="text/css" href="../app/css/owl.theme.default.min.css">
 </head>
-<body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow-sm">
-        <a class="navbar-brand" href="#">SF Draft</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="#about">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#gameplay">Gameplay</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#suggestions">Suggestions</a>
-                </li>
-            </ul>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+    <!-- Start pre-loader -->
+    <div id="pre-loader">
+        <div class="spinner-grow text-primary" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- End Pre-Loader -->
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+
+            <a  href="/">
+               <img src="app/images/logo.png" alt="logo" height="45"> 
+            </a>
+            <button class="navbar-toggler pull-left float-left" type="button" data-toggle="collapse"
+                data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="material-icons-round">dehaze</i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="#main">Home <span
+                                class="sr-only">(current)</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#purchase">Purchase</a></li>
+                    <li class="nav-item"><a class="nav-link" href="items">Prices</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#faqs">FAQs</a></li>
+                </ul>
+
+            </div>
+            <a href="https://discord.gg/w9AMARARbJ" class="btn-main"><i class="material-icons-round">download</i>
+                Discord</a>
         </div>
     </nav>
+    <!-- Navbar End -->
 
-    <!-- Hero Section -->
-    <header class="hero">
-        <div class="hero-content">
-            <div class="container">
-                <h1 class="display-4 fw-bold">Welcome to SF Draft</h1>
-                <p class="lead">Get ready for a fresh competitive experience with our new 5v5 tactical FPS game.</p>
-                <a href="#about" class="btn btn-primary btn-lg">Learn More</a>
-            </div>
-        </div>
-    </header>
-
-    <!-- About Section -->
-    <section id="about" class="section-padding">
+    <!-- main Start -->
+    <section id="main">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6 mb-4 mb-lg-0">
-                    <h2 class="display-4">What is SF Draft?</h2>
-                    <p>SF Draft is a 5v5 character-based tactical FPS that emphasizes precise gunplay and strategic teamwork. Engage in matches where two teams of five players compete against each other in high-stakes scenarios.</p>
+                <div class="col-md-6 cover-image align-self-center">
+                    <img src="app/images/main_sec_man3.png" class="img-fluid" alt="TKStudio">
                 </div>
-                <div class="col-lg-6">
-                    <h2 class="display-4">Game Objective</h2>
-                    <p>The objective is to win matches by securing a total of at least 10 rounds. The main game mode features the Red Team attempting to plant a Bomb at one of two designated bomb sites (A or B), while the Blue Team works to prevent this or defuse the Bomb if it's planted.</p>
+                <div class="col-md-6 align-self-center cover-body">
+                    <h1 class="rainboweffect">SFDraft</h1>
+                    <h3>SF Draft is a 5v5 character-based tactical FPS that emphasizes precise gunplay and strategic teamwork. Engage in matches where two teams of five players compete against each other in high-stakes scenarios.</h3>
+                    <p>Available on PC and Mobile.</p>
+                    <!--<h5 class="mb-0"><i class="material-icons-round mr-3">peoples</i>0</h5>
+                    <h5 class="mt-1"><i class="material-icons-round mr-3">memory</i>Processor 5th and above</h5>
+                  -->
                 </div>
             </div>
         </div>
     </section>
+    <!-- main End -->
 
-    <!-- Gameplay Section -->
-    <section id="gameplay" class="section-padding bg-light-custom">
+
+
+    <!-- Start features -->
+    <section id="features">
         <div class="container">
-            <h2 class="display-4">Gameplay Highlights</h2>
-            <p>Experience intense tactical gameplay with a focus on strategic planning and precision. Inspired by popular games, SF Draft brings a new level of excitement to the competitive FPS genre.</p>
+            <div class="row">
+                <div class="col-lg-6 offset-lg-3 col-md-8 offset-md-2 section-head text-center">
+                    <div class="section-head-tag">Features</div>
+                    <h2 class="section-head-title">Gameplay Highlights</h2>
+                    <p class="section-head-body">Experience intense tactical gameplay with a focus on strategic planning and precision. Inspired by popular games, SF Draft brings a new level of excitement to the competitive FPS genre.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="features-slider">
+                        <div class="owl-carousel owl-theme">
+                            <div class="item product">
+                                <div class="product-img">
+                                    <a target="_blank"
+                                        href="https://play-lh.googleusercontent.com/0GQHmnu-ae6OEEB0Xc6-ErphpsUTj8_n70RRdilRo4-vM9VYAomygDYR3z1sh6sM_mPB=w2560-h1440-rw">
+                                        <img src=""
+                                            class="img-fluid rounded" alt="demo">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="item product">
+                                <div class="product-img">
+                                    <a target="_blank"
+                                        href="#">
+                                        <img src=""
+                                            class="img-fluid rounded" alt="demo">
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
+    <!-- End features -->
 
-    <!-- Suggestions Section -->
-    <section id="suggestions" class="section-padding">
+
+
+
+
+    <!-- Start FAQs -->
+    <section id="faqs">
         <div class="container">
-            <h2 class="display-4">We Value Your Feedback</h2>
-            <p>We are open to your suggestions and ideas. Help us make SF Draft even better by sharing your thoughts with us!</p>
-            <form>
-                <div class="mb-3">
-                    <label for="name" class="form-label">Name</label>
-                    <input type="text" class="form-control" id="name" required>
+            <div class="row">
+                <div class="col-lg-6 offset-lg-3 col-md-8 offset-md-2 section-head text-center">
+                    <div class="section-head-tag">FAQs</div>
+                    <h2 class="section-head-title">Frequently Asked Questions</h2>
                 </div>
-                <div class="mb-3">
-                    <label for="email" class="form-label">Email address</label>
-                    <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 col-md-12 faqs-container offset-lg-2">
+                    <div class="faq">
+                        <div class="faq-head">
+                            <h5 class="mb-0" data-toggle="collapse" data-target="#faq1" aria-expanded="true">
+                                How can I download?
+                            </h5>
+                        </div>
+                        <div class="collapse show" id="faq1">
+                            <div class="faq-body">
+                                <p>To initiate the download process, click on the Discord button located in the
+                                    upper-right corner.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+
                 </div>
-                <div class="mb-3">
-                    <label for="suggestion" class="form-label">Your Suggestion</label>
-                    <textarea class="form-control" id="suggestion" rows="4" required></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
-            </form>
+            </div>
         </div>
     </section>
+    <!-- End FAQs -->
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container text-center">
-            <p>&copy; 2024 SF Draft. All rights reserved. <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+    <!-- Start Footer -->
+    <footer id="footer">
+        <div class="container">
+            <div class="row footer-main">
+                <div class="col-12 text-center">Copyright © 2024 <a href="/">TKStudio</a> & <a
+                        href="https://www.dragonflygame.com/">DragonflyGame</a>. All rights reserved.</div>
+            </div>
+            <div class="row footer-rights">
+
+                <ul class="nav m-0">
+                    <li class="nav-item">
+                        <a class="nav-link text-secondary" aria-current="page" href="#">Privacy Policy</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-secondary" href="#">Terms and conditions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-secondary" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+
         </div>
     </footer>
+    <!-- End Footer -->
 
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6214162457646801"
+        crossorigin="anonymous"></script>
+    <!-- JavaScript Files -->
+    <script src="../app/script/jquery-3.4.1.min.js"></script>
+    <script src="../app/script/popper.min.js"></script>
+    <script src="../app/script/bootstrap.min.js"></script>
+    <script src="../app/script/owl.carousel.min.js"></script>
+    <script src="https://cdn.sellix.io/static/js/embed.js"></script>
+    <!-- Main JS -->
+    <script src="../app/script/main.js"></script>
+    <script src="app/script/discordInvite.js"></script>
+    <script>
+        discordInvite.init({
+            inviteCode: 'w9AMARARbJ',
+            title: 'TK Studio',
+        });
+        discordInvite.render();
+    </script>
 </body>
+
 </html>
